@@ -3,7 +3,7 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
-        id        = "za.co.phonegap.partymatch"
+        id        = "com.phonegap.helloworld"
         version   = "1.0.0">
 
     <name>PartyMatch</name>
@@ -12,7 +12,7 @@
         PartyMatch finds you your perfect political partner.
     </description>
 
-    <author href="http://partymatch.co.za" email="support@phonegap.com">
+    <author href="http://partymatch.com" email="support@phonegap.com">
         PhoneGap Team
     </author>
 
