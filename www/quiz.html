@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script type="text/javascript">
+
+function calculate()
+{
+
+    var party;
+    var anctotal = 0;
+    var datotal = 0;
+    var efftotal = 0;
+    var agangtotal = 0;
+    var i =1;
+
+    while(el = document.getElementById("myonoffswitch"+i)) 
+    {
+
+        if(el.checked) 
+        {
+            var partyString = el.value.toString();
+            var partsOfStr = partyString.split(",");
+            for(party in partsOfStr)
+            {
+
+                if (partsOfStr[party] == "ANC"){
+                    anctotal = anctotal+1;
+                }
+
+                if (partsOfStr[party] == "AGANG"){
+                    agangtotal = agangtotal+1;
+                }
+
+
+                if (partsOfStr[party] == "DA"){
+                    datotal = datotal+1;
+                }
+
+
+                if (partsOfStr[party] == "EFF"){
+                    efftotal = efftotal+1;
+                }
+
+            }
+        }
+        i++;
+    }
+
+
+    var arr = [anctotal,agangtotal,datotal,efftotal];
+    var partyArray = ["ANC","AGANG","DA","EFF"];
+    var listOfMaxPartyScores = new Array;
+    var maxTotal = Math.max.apply(Math, arr);
+    var index = 0;
+    var j = 0;
+    for (index in arr)
+    {
+
+        if (arr[index]==maxTotal)
+        {
+            listOfMaxPartyScores[j]=partyArray[index];
+            j++;
+
+
+        }
+
+    }
+
+    alert(listOfMaxPartyScores);
+
+
+}
+</script>
+
+<link rel="stylesheet" type="text/css" href="slider.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+<img src="images/mainpageHEADER.png" alt="ACDP" class="quizHeaderText">
+<form onsubmit='return calculate()'>
+<div style="overflow:auto;margin-top:5%;margin-left:5%;">
+<table  >
+<tr>
+<th></th>
+<th></th>
+</tr>
+<tr>
+<td><font size="5" face="helvetica">Should tax payer money be used to provide free health care to the poor?   </font></td>
+<td>
+	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch1" class="onoffswitch-checkbox" id="myonoffswitch1" checked value="ANC,DA,TEST">
+    <label class="onoffswitch-label" for="myonoffswitch1">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+</div>
+</td>
+</tr>
+<tr/>
+<tr>
+<td><font size="5" face="helvetica">Do you believe same-sex marriages should be allowed?   </font></td>
+<td>	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch2" class="onoffswitch-checkbox" id="myonoffswitch2" checked value="DA,EFF">
+    <label class="onoffswitch-label" for="myonoffswitch2">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+</div></td>
+</tr>
+<tr>
+<td><font size="5" face="helvetica">Does South Africa need to bring back the death penality?   </font></td>
+<td>	<div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch3" class="onoffswitch-checkbox" id="myonoffswitch3" checked value="DA,EFF">
+    <label class="onoffswitch-label" for="myonoffswitch3">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+</div></td>
+</tr>
+<tr>
+<td><font size="5" face="helvetica">Should women have the right to choose whether or not to have an abortion?   </font></td>
+<td>    <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch4" class="onoffswitch-checkbox" id="myonoffswitch4" checked value="ANC,AGANG">
+    <label class="onoffswitch-label" for="myonoffswitch4">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+</div></td>
+</tr>
+<tr>
+<td><font size="5" face="helvetica">Do you agree with affirmative action?   </font></td>
+<td>    <div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch5" class="onoffswitch-checkbox" id="myonoffswitch5" checked value="DA">
+    <label class="onoffswitch-label" for="myonoffswitch5">
+        <div class="onoffswitch-inner"></div>
+        <div class="onoffswitch-switch"></div>
+    </label>
+</div></td>
+</tr>
+</table>
+</div>
+
+<input type="image" src="images/submitBUTTON.png" alt="Submit Form" class="gridHeaderButton" />
+</form>
+
+
+
+
+</body>
+</html>
+

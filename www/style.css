@@ -1,0 +1,118 @@
+/*img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -210px;
+    margin-top: -153px;
+}*/
+img.ri
+{
+	position: absolute;
+	max-width: 30%;
+	top: 10%;
+	left: 10%;
+/*	border-radius: 3px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.9);*/
+}
+img.ri:empty
+{
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+@media screen and (orientation: portrait) {
+  img.ri { max-width: 100%; }
+}
+
+@media screen and (orientation: landscape) {
+  img.ri { max-height: 100%; }
+}
+
+.quizHeaderText
+{
+	margin-top:5%;
+	margin-left:5%;
+	width: 90%;
+}
+
+.gridHeaderText
+{
+	margin-top:5%;
+	margin-left:5%;
+	width: 60%;
+}
+.gridHeaderButton
+{
+	margin-top:5%;
+	margin-right:5%;
+	width: 20%;
+	float: right;
+}
+
+.partyIcon
+{
+	margin-top:5%;
+	margin-left:5%;
+	width: 70%;
+}
+
+.partyHeaderText
+{
+	margin-top:5%;
+	margin-left:5%;
+	width: 50%;
+	float: left;
+}
+
+.partyPhotoHeaderText
+{
+	margin-top:5%;
+	margin-left:5%;
+	width: 50%;
+	float: left;
+}
+
+/*.tableLayout
+{
+	width: 100px;
+  	height: 250px;
+  	margin: 0 auto;
+  	position: relative;
+  	border-spacing: 0;
+  	padding: 0;
+
+
+  	border: 1px solid blue;
+}
+*/
+/*.tableCellLayout
+{
+	height: 10%;
+  position: relative;
+
+  background-color: green;
+}*/
+/*
+table.grid
+{
+	margin-top:5%;
+	margin-right:5%;
+	overflow: auto;
+	height: 100px;
+}
+
+td.grid
+{
+	text-align: center;
+	width: 30%;
+
+}
+
+tr.grid
+{
+	height:10%;
+}*/
