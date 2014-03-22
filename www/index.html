@@ -1,43 +1,54 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
 
-<img src="images/mainpageHEADER.png" alt="ACDP"  class="gridHeaderText" style="height:20%;">
-<a href="quiz.html"><img src="images/matchBUTTON.png" alt="ACDP" class="gridHeaderButton"></a>
-<br/>
-<br/>
+  <body>
 
-<div style="height:70%;overflow:auto;">
+    <div class="container">
 
-<table align="center"> 
-<tr>
-	<td><a href="julius/partyinfo.html"><img src="images/acdpLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/ancLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/apcLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-</tr>
-<tr>
-	<td><a href="julius/partyinfo.html"><img src="images/azapoLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/copeLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/daLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-</tr>
-<tr>
-	<td><a href="julius/partyinfo.html"><img src="images/idLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/ifpLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/pacLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-</tr>
-<tr>
-	<td><a href="julius/partyinfo.html"><img src="images/vryheidsfrontLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-	<td><a href="julius/partyinfo.html"><img src="images/ucdpLOGO.jpg" alt="ACDP" class="partyIcon"></a></td>
-</tr>
-</table>
-</div>
-<div style="font-family: helvetica neue; font-size:12pt; line-height:1.5; vertical-align:top;">
-	<p><a href="https://www.elections.org.za/content/For-voters/My-voter-registration-details/">Check my registration status</a></p>
-	<p><a href="http://www.elections.org.za/content/For-Voters/How-do-I-register-/">How do I register?</a></p>
-	<p><a href="https://www.elections.org.za/content/For-voters/who-is-my-councillor-/">Who is my ward councillor?</a></p>
-</div>
+      <div class="jumbotron">
+        <h1>Welcome to Party Match!</h1>
+        <p class="lead">Have fun learning about the 2014 elections. Take a look at the political parties you can vote for below or take the "Match Me" quiz to help you decide which party would suit you best!</p>
+        <p><a class="btn btn-lg btn-success" href="http://www.elections.org.za/content/default.aspx" role="button">More about voting</a></p>
+      </div>
 
-</body>
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Potential Party Matches</h4>
+          <p>Before you take the quiz, take a look at which party might be your perfect match. Meet the leader of a party an learn their likes and dislikes.</p>
+          <p><button type="button" onclick="window.location.href='grid.html';" class="btn btn-primary">Party Profiles</button></p>
+
+          <h4>Registration Status</h4>
+          <p>Find out if you are registered and where you are registered.</p>
+          <p><button type="button" onclick="window.location.href='https://www.elections.org.za/content/For-voters/My-voter-registration-details/';" class="btn btn-primary">Registration Status</button></p>
+
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Take the Quiz</h4>
+          <p>Take the Party Match quiz and see who is your ideal political partner.</p>
+          <p><a href="quiz.html"><img src="images/matchBUTTON.png" alt="Match me"></a></p>
+
+          <h4>Who is my ward councillor?</h4>
+          <p>Be an educated voter and get acquainted with your current ward councilor.</p>
+          <p><button type="button" onclick="window.location.href='https://www.elections.org.za/content/For-voters/who-is-my-councillor-/';" class="btn btn-primary">My Ward Councilor</button></p>
+
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; Party Match 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
 </html>

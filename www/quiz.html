@@ -1,6 +1,17 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron-narrow.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="css/slider.css">
+
+  <body>
+
 
 <script type="text/javascript">
 
@@ -73,14 +84,15 @@ function calculate()
 }
 </script>
 
-<link rel="stylesheet" type="text/css" href="slider.css">
-<link rel="stylesheet" type="text/css" href="style.css">
+<div class="container">
 
+      <div class="page-header">
+            <button type="button" onclick="window.location.href='index.html'" class="btn btn-sm btn-info">Back</button>
+            <img src="images/mainpageHEADER.png" alt="Find my match" width="80%;" align="right">
+      </div>
 
-<img src="images/mainpageHEADER.png" alt="ACDP" class="quizHeaderText">
 <form onsubmit='return calculate()'>
-<div style="overflow:auto;margin-top:5%;margin-left:5%;">
-<table  >
+<table >
 <tr>
 <th></th>
 <th></th>
@@ -130,21 +142,33 @@ function calculate()
 </tr>
 <tr>
 <td><font size="5" face="helvetica">Do you agree with affirmative action?   </font></td>
-<td>    <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch5" class="onoffswitch-checkbox" id="myonoffswitch5" checked value="DA">
-    <label class="onoffswitch-label" for="myonoffswitch5">
+<td>    
+    <div class="onoffswitch">
+        <input type="checkbox" name="onoffswitch5" class="onoffswitch-checkbox" id="myonoffswitch5" checked value="DA">
+        <label class="onoffswitch-label" for="myonoffswitch5">
         <div class="onoffswitch-inner"></div>
         <div class="onoffswitch-switch"></div>
-    </label>
-</div></td>
+        </label>
+    </div>
+</td>
 </tr>
-</table>
-</div>
+<tr>
+    <td/>
+    <td><p><input type="image" src="images/submitBUTTON.png" alt="Submit Form" align="right" /></p></td>
+</tr>
 
-<input type="image" src="images/submitBUTTON.png" alt="Submit Form" class="gridHeaderButton" />
+</table>
+
+
+
 </form>
 
+      <div class="footer">
+        <p>&copy; Party Match 2014</p>
+      </div>
 
+
+</div>
 
 
 </body>
